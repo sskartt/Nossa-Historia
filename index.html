@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nossa História</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fffafc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #d46a92;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 20px;
+      color: #7d4c5f;
+      margin-bottom: 40px;
+    }
+    .timeline-item {
+      margin-bottom: 50px;
+    }
+    .timeline-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .caption {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+      text-align: center;
+    }
+    .surprise-button {
+      display: block;
+      margin: 50px auto;
+      padding: 15px 30px;
+      background-color: #d46a92;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .surprise-button:hover {
+      background-color: #b54f77;
+    }
+    .hidden-message {
+      display: none;
+      text-align: center;
+      font-size: 22px;
+      color: #d46a92;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function showSurprise() {
+      document.getElementById("surpriseMessage").style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Nossa História</h1>
+    <div class="subtitle">13/07/2024 - ♾️</div>
+
+    <div class="timeline-item">
+      <img src="fotos/foto1.jpeg" alt="Foto 1">
+      <div class="caption">13/07/2024 - Pedido de namoro</div>
+    </div>
+    <div class="timeline-item">
+      <img src="fotos/foto2.jpeg" alt="Foto 2">
+      <div class="caption">13/09/2024 - Perdido no seu sorriso</div>
+    </div>
+    <div class="timeline-item">
+      <img src="fotos/foto3.jpeg" alt="Foto 3">
+      <div class="caption">13/11/2024 - Primeira viagem juntos</div>
+    </div>
+    <div class="timeline-item">
+      <img src="fotos/foto4.jpeg" alt="Foto 4">
+      <div class="caption">14/11/2024 - Minha "Universal" é você</div>
+    </div>
+    <div class="timeline-item">
+      <img src="fotos/foto5.jpeg" alt="Foto 5">
+      <div class="caption">17/11/2024 - Fim da nossa primeira viagem (de muitas que estão por vir)</div>
+    </div>
+    <div class="timeline-item">
+      <img src="fotos/foto6.jpeg" alt="Foto 6">
+      <div class="caption">29/12/2024 - Curtindo o final de ano</div>
+    </div>
+    <div class="timeline-item">
+      <img src="fotos/foto7.jpeg" alt="Foto 7">
+      <div class="caption">01/01/2025 - Primeiro ano novo juntos</div>
+    </div>
+
+    <button class="surprise-button" onclick="showSurprise()">Clique aqui para uma surpresa</button>
+    <div id="surpriseMessage" class="hidden-message">
+      O inesperado que mais esperei ❤️
+    </div>
+  </div>
+</body>
+</html>
